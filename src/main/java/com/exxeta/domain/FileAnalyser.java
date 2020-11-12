@@ -7,7 +7,7 @@ public class FileAnalyser {
     private final static String COMMENT = "//";
 
     public static LOCStat analyseFile(String filename){
-        List<String> sourceCode = FileReader.readFile(filename);
+        List<String> sourceCode = FileService.readFile(filename);
         return analyse(filename, sourceCode);
     }
 

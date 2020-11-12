@@ -1,9 +1,5 @@
 package com.exxeta.ui;
 
-import com.exxeta.domain.LOCStat;
-
-import java.util.List;
-
 public class UserInterface {
 
     public static void printLocCount(LOCStat locStat) {
