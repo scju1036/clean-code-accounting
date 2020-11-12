@@ -8,6 +8,12 @@ import java.util.stream.Collectors;
 
 public class AccountingService {
 
+    public static Double deposit(AccountingDTO accountingDTO) {
+        saveAccounting(accountingDTO);
+        List<AccountingDTO> accountings = loadAccountings();
+        return calculateBalance(accountings);
+    }
+
     public static void saveAccounting(AccountingDTO accounting) {
         String line = accounting.toString();
         FileService.saveLine(line);

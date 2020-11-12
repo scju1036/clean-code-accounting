@@ -1,4 +1,4 @@
-package com.exxeta.domain;
+package com.exxeta.model;
 
 public enum Action {
     DEPOSIT,

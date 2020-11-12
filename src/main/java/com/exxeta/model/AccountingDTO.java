@@ -13,6 +13,9 @@ public class AccountingDTO {
         this.category = category;
     }
 
+    public AccountingDTO() {
+    }
+
     public Date getDate() {
         return date;
     }
